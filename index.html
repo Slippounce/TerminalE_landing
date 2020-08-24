@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/reset.css" media="all">
+    <link type="text/css" rel="stylesheet" href="css/styles.css" media="all">
+    <title>Терминал Е</title>
+</head>
+<body>
+<div class="wrapper">
+<header class="header">
+    <img class='logo' src="images/white_logo%201.svg" alt="logo">
+    <div class="socials">
+        <a class="socials__item" href="#"><img src="images/instagram.svg" alt="inst"></a>
+        <a class="socials__item" href="#"><img src="images/youtube.svg" alt="youtube"></a>
+        <img class="socials__item" src="images/RU.svg" alt="lang">
+    </div>
+</header>
+<main>
+    <div class="yellow-container">
+        <div class="yellow-container__header">
+            <div class="container-name">Регистрация на рейс</div>
+            <img src="images/logo_for_yellow%201.svg" alt="" class="container-logo">
+        </div>
+        <div class="yellow-container__content">
+            <div class="options-row">
+                <div class="input">
+                    <label for="departure" class="input__label">Отправление</label>
+                    <input id="departure" class="input__input" type="text" value="Терминал Е" readonly>
+                </div>
+                <div class="input">
+                    <label for="arrival" class="input__label">Прибытие</label>
+<!--                    <select id="arrival" class="input-input">-->
+<!--                        <option value="asia">Вок и ток</option>-->
+<!--                        <option value="russia">Компот</option>-->
+<!--                        <option value="america">Дуглас</option>-->
+<!--                        <option value="penka">Penka</option>-->
+<!--                        <option value="dutyfree">Duty free</option>-->
+<!--                    </select>-->
+                    <input id="arrival" class="input__input" type="text" value="Penka" readonly>
+                    <button class="input__button"><img src="images/down-arrow%204.svg" alt="button"></button>
+                </div>
+                <div class="input">
+                    <label for="class" class="input__label">Класс</label>
+                    <input id="class" class="input__input" type="text" value="Эконом" readonly>
+                    <button class="input__button"><img src="images/down-arrow%204.svg" alt="button"></button>
+                </div>
+            </div>
+            <div class="frame frame--squeezed">
+                <div class="frame__item">
+                    <input class="frame__radio-input" type="radio" id="flightType1"
+                           name="flightType" value="roundTrip">
+                    <label class="frame__radio-label" for="flightType1">Туда и обратно</label>
+                </div>
+                <div class="frame__item">
+                    <input class="frame__radio-input" type="radio" id="flightType2"
+                           name="flightType" value="onlyThere">
+                    <label class="frame__radio-label" for="flightType2">В одну сторону</label>
+                </div>
+                <div class="frame__item">
+                    <input class="frame__radio-input" type="radio" id="flightType3"
+                           name="flightType" value="difRoad">
+                    <label class="frame__radio-label" for="flightType3">Сложный маршрут</label>
+                </div>
+
+            </div>
+
+            <div class="options-row">
+                <div class="input">
+                    <label for="departureDate" class="input__label">Туда</label>
+                    <input id="departureDate" class="input__input" type="date" value="04.04.2013" readonly>
+                    <!--                    <button class="input__button"><img src="images/down-arrow%204.svg" alt="button"></button>-->
+                </div>
+                <div class="input">
+                    <label for="arrivalDate" class="input__label">Обратно</label>
+                    <input id="arrivalDate" class="input__input" type="date" value="">
+                    <!--                    <button class="input__button"><img src="images/down-arrow%204.svg" alt="button"></button>-->
+                </div>
+                <div class="options-row__frame frame frame--squeezed">
+                    <div class="frame__item">
+                        <input class="frame__radio-input" type="radio" id="dateType1"
+                               name="dateType" value="roundTrip" checked >
+                        <label class="frame__radio-label" for="dateType1">Точные даты</label>
+                    </div>
+                    <div class="frame__item">
+                        <input class="frame__radio-input" type="radio" id="dateType2"
+                               name="dateType" value="onlyThere">
+                        <label class="frame__radio-label" for="dateType2">± 3дня</label>
+                    </div>
+                </div>
+            </div>
+            <div class="options-row options-row--flex-start">
+
+                <div class="input input-mini">
+                    <label for="matures" class="input__label">Взрослые:</label>
+                    <input id="matures" class="input__input" type="text" value="1" readonly>
+                </div>
+                <label>
+                    Label
+                    <select style="width: 200px;">
+                        <option value="" hidden disabled selected>Выбрать</option>
+                        <option>Мальчик</option>
+                        <option>Девочка</option>
+                    </select>
+                </label>
+                <!--                <div class="input input-mini">-->
+<!--                    <label for="children" class="input__label">Дети (2-12):</label>-->
+<!--                    <input id="children" class="input__input" type="text" value="1" readonly>-->
+<!--                    <button class="input__button"><img src="images/down-arrow%204.svg" alt="button"></button>-->
+<!--                </div>-->
+                <div class="input input-mini">
+                    <label for="babies" class="input__label">Младенцы:</label>
+                    <input id="babies" class="input__input" type="text" value="1" readonly>
+                    <button class="input__button"><img src="images/down-arrow%204.svg" alt="button"></button>
+                </div>
+
+            </div>
+            <div class="options-row"></div>
+            <div class="options-row">
+
+            </div>
+        </div>
+    </div>
+</main>
+</div>
+<footer>
+
+</footer>
+</body>
+</html>

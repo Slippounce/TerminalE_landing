@@ -1,0 +1,145 @@
+body{
+    background: 1% 10% url("../images/background.jpg");
+    font-family: Roboto, serif;
+}
+
+.wrapper{
+    max-width: 960px;
+    margin: auto;
+}
+
+.header{
+    padding: 25px 0 0 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.socials{
+    display: flex;
+    align-items: center;
+}
+
+.socials__item{
+    margin: 0 25px 0 0;
+}
+.socials__item:last-child{
+    margin: 0;
+}
+
+.yellow-container{
+    max-width: 960px;
+    background: #ffe33e;
+    margin: 28px 0 0 0;
+    box-shadow: 0 8px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 25px;
+}
+
+.yellow-container__header{
+    background: linear-gradient(180deg, rgba(255, 231, 89, 0.5) 0%, rgba(233, 201, 15, 0.5) 100%);
+    border-radius: 25px 25px 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container-name{
+    margin: 9px 0 9px 35px;
+    font-size: 24px;
+    line-height: 28px;
+    color: #525252;
+}
+
+.container-logo{
+    margin: 0 26px;
+}
+
+.yellow-container__content{
+    padding: 42px 0 0 0;
+}
+
+.options-row{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 38px 0 38px;
+}
+
+.options-row--flex-start{
+    justify-content: flex-start;
+}
+
+.input{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.input__label{
+    font-size: 14px;
+    line-height: 16px;
+    color: #525252;
+    margin: 0 0 13px 0;
+}
+
+.input__input{
+    /*display: block;*/
+    /*width: 100%;*/
+    /*padding: .75rem 2.5rem .75rem 1rem;*/
+    /*background: none;*/
+    /*border: 1px solid #ccc;*/
+    /*border-radius: 3px;*/
+    /*-webkit-appearance: none;*/
+    /*-moz-appearance: none;*/
+    /*appearance: none;*/
+    /*font-family: inherit;*/
+    /*color: #444;*/
+
+
+    width: 242px;
+    height: 40px;
+    border: none;
+    font-size: 14px;
+    line-height: 16px;
+    padding:  0 0 0 16px;
+}
+
+.input__button{
+    position: absolute;
+    right: 0;
+    bottom: 10%;
+    margin: 0 10px 0 0;
+    background: none;
+    border: none;
+}
+
+.frame{
+    margin: 29px 0 30px 33px;
+    width: 540px;
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 20px;
+    text-align: center;
+}
+
+.options-row__frame{
+    width: 200px;
+}
+
+.frame__radio-label{
+    /*margin: 0 50px 0 0;*/
+    font-size: 14px;
+    line-height: 16px;
+    color: #525252;
+}
+
+.frame__radio-input{
+    margin: 0;
+}
+
+.frame__radio-label:last-child{
+    margin: 0;
+}
+
+.frame--squeezed{
+    box-shadow: inset -1px -1px 0 rgba(0, 0, 0, 0.25), inset 3px 3px 3px rgba(0, 0, 0, 0.25);
+    border-radius: 25px;
+}
