@@ -32,26 +32,30 @@
                 </div>
                 <div class="input">
                     <label for="arrival" class="input__label">Прибытие</label>
-<!--                    <select id="arrival" class="input-input">-->
-<!--                        <option value="asia">Вок и ток</option>-->
-<!--                        <option value="russia">Компот</option>-->
-<!--                        <option value="america">Дуглас</option>-->
-<!--                        <option value="penka">Penka</option>-->
-<!--                        <option value="dutyfree">Duty free</option>-->
-<!--                    </select>-->
-                    <input id="arrival" class="input__input" type="text" value="Penka" readonly>
-                    <button class="input__button"><img src="images/down-arrow%204.svg" alt="button"></button>
+                    <select id="arrival" class="input__select input__input">
+                        <option value="asia">Вок и ток</option>
+                        <option value="russia">Компот</option>
+                        <option value="america">Дуглас</option>
+                        <option value="penka">Penka</option>
+                        <option value="dutyfree">Duty free</option>
+                    </select>
+<!--                    <input id="arrival" class="input__input" type="text" value="Penka" readonly>-->
+<!--                    <button class="input__button"><img src="images/down-arrow%204.svg" alt="button"></button>-->
                 </div>
                 <div class="input">
                     <label for="class" class="input__label">Класс</label>
-                    <input id="class" class="input__input" type="text" value="Эконом" readonly>
-                    <button class="input__button"><img src="images/down-arrow%204.svg" alt="button"></button>
+                    <select id="class" class="input__select input__input">
+                        <option value="econom" >Эконом</option>
+                        <option value="business">Бизнес</option>
+                    </select>
+<!--                    <input id="class" class="input__input" type="text" value="Эконом" readonly>-->
+<!--                    <button class="input__button"><img src="images/down-arrow%204.svg" alt="button"></button>-->
                 </div>
             </div>
             <div class="frame frame--squeezed">
                 <div class="frame__item">
                     <input class="frame__radio-input" type="radio" id="flightType1"
-                           name="flightType" value="roundTrip">
+                           name="flightType" value="roundTrip" checked>
                     <label class="frame__radio-label" for="flightType1">Туда и обратно</label>
                 </div>
                 <div class="frame__item">
@@ -95,38 +99,108 @@
 
                 <div class="input input-mini">
                     <label for="matures" class="input__label">Взрослые:</label>
-                    <input id="matures" class="input__input" type="text" value="1" readonly>
-                </div>
-                <label>
-                    Label
-                    <select style="width: 200px;">
-                        <option value="" hidden disabled selected>Выбрать</option>
-                        <option>Мальчик</option>
-                        <option>Девочка</option>
+                    <select id="matures" class="input__select input__input">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
                     </select>
-                </label>
-                <!--                <div class="input input-mini">-->
-<!--                    <label for="children" class="input__label">Дети (2-12):</label>-->
+<!--                    <input id="matures" class="input__input" type="text" value="1" readonly>-->
+<!--                    <button class="input__button"><img src="images/down-arrow%204.svg" alt="button"></button>-->
+                </div>
+
+                <div class="input input-mini">
+                    <label for="children" class="input__label">Дети (2-12):</label>
+                    <select id="children" class="input__select input__input">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
 <!--                    <input id="children" class="input__input" type="text" value="1" readonly>-->
 <!--                    <button class="input__button"><img src="images/down-arrow%204.svg" alt="button"></button>-->
-<!--                </div>-->
+                </div>
+
                 <div class="input input-mini">
                     <label for="babies" class="input__label">Младенцы:</label>
-                    <input id="babies" class="input__input" type="text" value="1" readonly>
-                    <button class="input__button"><img src="images/down-arrow%204.svg" alt="button"></button>
+                    <select id="babies" class="input__select input__input">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+<!--                    <input id="babies" class="input__input" type="text" value="1" readonly>-->
+<!--                    <button class="input__button"><img src="images/down-arrow%204.svg" alt="button"></button>-->
                 </div>
 
             </div>
-            <div class="options-row"></div>
+            <h1 class="yellow-container_header2">Зарегистрируйся на рейс и получи промокод <span id="offer">на пирожное и поп-корн</span></h1>
             <div class="options-row">
-
+                <div class="input">
+                    <label for="name" class="input__label">Ваше имя</label>
+                    <input id="name" class="input__input" type="text" value="">
+                </div>
+                <div class="input">
+                    <label for="phone_1" class="input__label">Ваш номер</label>
+                    <input id="phone_1" class="input__input" type="text" value="" readonly>
+                </div>
+                <button class="button" type="submit">ПОЛУЧИТЬ ПРОМОКОД</button>
+            </div>
+            <div class="options-row">
+                <div class="input">
+                    <label for="friendName" class="input__label">Имя друга</label>
+                    <input id="friendName" class="input__input" type="text" value="">
+                </div>
+                <div class="input">
+                    <label for="phone_2" class="input__label">Номер друга</label>
+                    <input id="phone_2" class="input__input" type="text" value="" readonly>
+                </div>
+                <button class="button" type="submit">ПРОМОКОД ДРУГУ</button>
+            </div>
+            <div class="agreement">
+                <input id="agreement__checkbox" type="checkbox">
+                <label for="agreement__checkbox" class="yellow-container__text">Согласие на обработку персональных данных</label>
             </div>
         </div>
     </div>
 </main>
 </div>
-<footer>
+<footer class="footer">
+    <div class="footer__content wrapper">
+    <img src="images/logo_for_yellow%201.svg" alt="logo">
+    <div class="socials">
+        <a class="socials__item" href="#"><img src="images/instagram_gray.svg" alt="inst"></a>
+        <a class="socials__item" href="#"><img src="images/youtube_gray.svg" alt="youtube"></a>
+        <img class="socials__item" src="images/RU_gray.svg" alt="lang">
+    </div>
 
+    <table class="contacts">
+        <tr>
+            <td class="contacts__dt">Адрес:</td>
+            <td class="contacts__dd">Москва, Бауманская 149, стр. 5</td>
+        </tr>
+        <tr>
+            <td class="contacts__dt">Email:</td>
+            <td class="contacts__dd">contacts@terminal_e.ru</td>
+        </tr>
+        <tr>
+            <td class="contacts__dt">Телефон:</td>
+            <td class="contacts__dd">+7 999 999 99 99</td>
+        </tr>
+    </table>
+
+<!--    <dl class="contacts">-->
+<!--        <dt>Адрес:</dt>-->
+<!--        <dd>Москва, Бауманская 149, стр. 5</dd>-->
+<!--        <dt>Email:</dt>-->
+<!--        <dd>contacts@terminal_e.ru</dd>-->
+<!--        <dt>Телефон:</dt>-->
+<!--        <dd>+7 999 999 99 99</dd>-->
+<!--    </dl>-->
+</div>
 </footer>
 </body>
 </html>
