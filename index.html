@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="css/datepicker.min.css" rel="stylesheet" type="text/css">
     <link type="text/css" rel="stylesheet" href="css/reset.css" media="all">
     <link type="text/css" rel="stylesheet" href="css/styles.css" media="all">
     <title>Терминал Е</title>
@@ -28,7 +29,7 @@
             <div class="options-row">
                 <div class="input">
                     <label for="departure" class="input__label">Отправление</label>
-                    <input id="departure" class="input__input" type="text" value="Терминал Е" readonly>
+                    <input id="departure" class="input__input input--disabled" type="text" value="Терминал Е" readonly>
                 </div>
                 <div class="input">
                     <label for="arrival" class="input__label">Прибытие</label>
@@ -74,13 +75,15 @@
             <div class="options-row">
                 <div class="input">
                     <label for="departureDate" class="input__label">Туда</label>
-                    <input id="departureDate" class="input__input" type="date" value="04.04.2013" readonly>
-                    <!--                    <button class="input__button"><img src="images/down-arrow%204.svg" alt="button"></button>-->
+                    <label class="input__date-label input--disabled">
+                        <input id="departureDate" class="input--middle input__input input--disabled" type="text" value="04.04.2013" readonly>
+                    </label>
                 </div>
                 <div class="input">
                     <label for="arrivalDate" class="input__label">Обратно</label>
-                    <input id="arrivalDate" class="input__input" type="date" value="">
-                    <!--                    <button class="input__button"><img src="images/down-arrow%204.svg" alt="button"></button>-->
+                    <label class="input__date-label">
+                    <input id="arrivalDate" class="input--middle input__input datepicker-here" type="text" value="">
+                    </label>
                 </div>
                 <div class="options-row__frame frame frame--squeezed">
                     <div class="frame__item">
@@ -145,7 +148,7 @@
                 </div>
                 <div class="input">
                     <label for="phone_1" class="input__label">Ваш номер</label>
-                    <input id="phone_1" class="input__input" type="text" value="" readonly>
+                    <input id="phone_1" placeholder="+7 (___) ___ - ____" class="input__input" type="tel" value="">
                 </div>
                 <button class="button" type="submit">ПОЛУЧИТЬ ПРОМОКОД</button>
             </div>
@@ -156,7 +159,7 @@
                 </div>
                 <div class="input">
                     <label for="phone_2" class="input__label">Номер друга</label>
-                    <input id="phone_2" class="input__input" type="text" value="" readonly>
+                    <input id="phone_2" placeholder="+7 (___) ___ - ____" class="input__input" type="text" value="">
                 </div>
                 <button class="button" type="submit">ПРОМОКОД ДРУГУ</button>
             </div>
@@ -203,4 +206,13 @@
 </div>
 </footer>
 </body>
+<script src="node_modules/jquery/dist/jquery.min.js"></script>
+<script src="js/jquery.maskedinput.min.js"></script>
+<script src="js/datepicker.min.js"></script>
+<script>
+    $(function(){
+        $("#phone_1").mask("+7(999) 999-9999");
+        $("#phone_2").mask("+7(999) 999-9999");
+    });
+</script>
 </html>
